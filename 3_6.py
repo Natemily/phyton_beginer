@@ -1,0 +1,5 @@
+one = input()
+two = input()
+three = input()
+four = input()
+# print(two, three, four, sep=one)
