@@ -1,4 +1,3 @@
-# объявление функции
 def is_prime(num):
     count = 0
     for i in range(1, num + 1):
@@ -8,10 +7,19 @@ def is_prime(num):
         return True
     else:
         return False
-            
+
+
+def get_next_prime(num):
+    k, a = num + 1, 0
+    for i in range(k, k + 1000):
+        if is_prime(i):
+            a = i
+            break
+    return a
+
 
 # считываем данные
 n = int(input())
 
 # вызываем функцию
-print(is_prime(n))
+print(get_next_prime(n))
